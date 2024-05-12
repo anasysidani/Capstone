@@ -43,7 +43,7 @@ def scrape_linkedin(keyword, geo_location):
     # Setup WebDriver (Make sure to specify the path to where your chromedriver is located)
     #options = webdriver.EdgeOptions()
     #options.add_argument("--lang=en-GB")
-    #browser = webdriver.Edge(service=EdgeService(EdgeChromiumDriverManager().install()),options = options)
+    #browser = webdriver.Edge( options=edge_options, executable_path=edgedriver_path)
 
     # Login to LinkedIn
     browser.get('https://www.linkedin.com/uas/login')
