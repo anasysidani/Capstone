@@ -14,7 +14,6 @@ import numpy as np
 from selenium import webdriver  
 
 from time import sleep
-from pynput.keyboard import Key, Controller
 import time
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.common.by import By
