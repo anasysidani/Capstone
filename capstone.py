@@ -192,7 +192,7 @@ def get_result_df(links_list):
 
 edge_options = Options()
 service = Service(edgedriver_path)
-browser = webdriver.Edge(service=Service(EdgeChromiumDriverManager().install()), options=options)
+browser = webdriver.Edge(service=Service(EdgeChromiumDriverManager().install()), options=edge_options)
 
 st.sidebar.title('Navigation')
 page = st.sidebar.selectbox("Select Page", ["LinkedIn Scraper", "Power BI Dashboard"])
