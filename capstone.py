@@ -191,6 +191,10 @@ def get_result_df(links_list):
 
 
 edge_options = Options()
+edge_options.add_argument('--no-sandbox')
+edge_options.add_argument('--disable-dev-shm-usage')  
+edge_options.add_argument('--headless')
+edge_options.add_argument('--log-level=3')
 service = Service(edgedriver_path)
 browser = webdriver.Edge(service=Service(EdgeChromiumDriverManager().install()), options=edge_options)
 
