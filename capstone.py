@@ -55,7 +55,7 @@ def scrape_linkedin(keyword, geo_location):
 
 # finding password section and entering details
     pword = browser.find_element("id", "password")
-    pword.send_keys("Dancing123@")
+    pword.send_keys("pass")
 # Wait for the page to load completely
     time.sleep(3)
  
